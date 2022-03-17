@@ -217,6 +217,12 @@ section {
         margin: 1rem 0 0 0;
         padding: 1px;
     }
+    /*----aboutusjumbotron----*/
+    .jumbotron {
+        width: 100%;
+        height: 10rem;
+    }
+    /*----aboutusjumbotron----*/
     .myvisit .col-xs-12 {
         width: 100%;
     }
