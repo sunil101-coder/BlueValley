@@ -1,0 +1,315 @@
+:root {
+    --color-1: #2f3240;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #e8eef3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container1 {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+/*header*/
+
+.header {
+    background-color: var(--color-1);
+    padding: 0 0;
+    line-height: 1.5;
+}
+
+.header .logo,
+.header .nav {
+    padding: 0 15px;
+}
+
+.header .logo a {
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.header .logo a:hover {
+    color: #7fffd4;
+}
+
+.header .nav ul li {
+    display: inline-block;
+    margin: 15px 40px 0 0;
+}
+
+.header .nav ul li a {
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 0;
+    transition: all 0.5s ease;
+}
+
+.header .nav ul li a.active,
+.header .nav ul li a:hover {
+    color: #f3a93d;
+}
+
+.nav-toggler {
+    height: 34px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display: none;
+    margin-right: 15px;
+}
+
+.nav-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.nav-toggler span {
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-toggler.active span {
+    background-color: transparent;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    transition: all 0.3s ease;
+}
+
+.nav-toggler span::before {
+    transform: translateY(-6px);
+}
+
+.nav-toggler.active span::before {
+    transform: rotate(45deg);
+}
+
+.nav-toggler span::after {
+    transform: translateY(6px);
+}
+
+.nav-toggler.active span::after {
+    transform: rotate(135deg);
+}
+
+@media(max-width:991px) {
+    .nav-toggler {
+        display: block;
+    }
+    .header .nav {
+        width: 100%;
+        padding: 0;
+        max-height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+    .header .nav.open {
+        visibility: visible;
+    }
+    .header .nav ul {
+        padding: 12px 15px 0;
+        margin-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .header .nav ul li {
+        display: block;
+        margin: 0;
+    }
+}
+
+
+/*--Slider--*/
+
+.imageslider .image-slider {
+    width: 100%;
+    height: 75%;
+    margin-top: 2px;
+}
+
+
+/*--Booking Form-*/
+
+#loginbox {
+    background-image: url(../img/about.jpg);
+    background-attachment: fixed;
+    height: 48%;
+    width: 100%;
+    text-align: center;
+    background-repeat: repeat-x
+}
+
+
+/*--visit--*/
+
+section {
+    padding: 1rem;
+}
+
+.card-title {
+    font-family: cursive;
+    margin-top: 15px;
+    font-size: larger;
+}
+
+
+/*--media query--*/
+
+@media screen and (min-width:320px) {
+    .imageslider .image-slider {
+        width: 107%;
+        height: auto;
+        margin-top: 2px;
+        margin-left: -11px;
+    }
+    .checkingForm {
+        margin: 1rem 0 0 0;
+        padding: 1px;
+    }
+    .myvisit .col-xs-12 {
+        width: 100%;
+    }
+    .mybrand {
+        margin-top: 15px;
+    }
+    .mybrand .col-xs-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .imageslider .image-slider {
+        width: 103%;
+    }
+    .myvisit .col-sm-6 {
+        width: 48%;
+        margin-bottom: 25px;
+    }
+    .mybrand .col-sm-3 {
+        width: 32%;
+    }
+    .mybrand .brandtitle {
+        font-size: x-small;
+        margin-top: -9px;
+    }
+    .mybrand .card-img-top {
+        height: 85px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imageslider {
+        height: 30rem;
+    }
+    .imageslider .image-slider {
+        width: 102%;
+        height: 30rem;
+        margin-top: 2px;
+    }
+    .checkingForm {
+        margin: 1rem 0 0 1rem;
+        padding: 1px;
+    }
+    .checkingForm .form-group {
+        padding: 0.3rem;
+        font-size: x-large;
+    }
+    .checkingForm input[type='date'] input[type='text'] {
+        border-radius: 1rem;
+        text-align: center;
+    }
+    .checkingForm input[type='date'] {
+        display: block;
+        width: 27.5rem;
+        padding: 1px;
+    }
+    .checkingForm .btn {
+        margin: 1rem 0 0 5rem;
+    }
+    .myvisit {
+        padding: 1rem;
+    }
+    .myvisit .col-sm-6 {
+        padding: 1rem;
+        width: 24%;
+    }
+    .myvisit .card-img,
+    .card-img-top {
+        width: -webkit-fill-available;
+        height: 10rem;
+    }
+    .mybrand .brandtitle {
+        font-size: large;
+        margin-top: -4px;
+    }
+    .mybrand .card-img-top {
+        height: 125px;
+    }
+}
+
+footer#footer {
+    background-color: #000;
+    height: auto;
+    border: 1px solid #000
+}
+
+footer#footer>div {
+    color: #fff;
+    height: auto;
+    width: auto
+}
+
+footer#footer ul li a {
+    text-decoration: none;
+    color: #fff
+}
