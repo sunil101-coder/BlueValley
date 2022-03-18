@@ -1,6 +1,6 @@
 const vist = [{
         id: 1,
-        image: "http://localhost/BlueValley/img/visit1.jpg"
+        image: "img/visit1.jpg"
     },
     {
         id: 2,
