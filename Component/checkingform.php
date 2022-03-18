@@ -13,7 +13,7 @@
                         placeholder="Enter email">
                   </div>
                 <div class="form-group">
-                    <label for="exampleSelectArival">Arival</label>
+                    <label for="exampleSelectArival">Arrival</label>
                     <input type='date' name="Arival" required="required" />
 
                 </div>

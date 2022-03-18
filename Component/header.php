@@ -23,7 +23,7 @@
             </button>
             <nav class="nav">
                <ul>
-                  <li><a href="aboutus.php">About</a></li>
+                  <li><a href="aboutus.php">About Us</a></li>
                   <li><a href="service.php" onclick="changePageTitle()">services</a></li>
                   <li><a href="gallery.php">Gallery</a></li>
                   <li><a href="contact.php">Contact</a></li>
