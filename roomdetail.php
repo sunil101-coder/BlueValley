@@ -11,4 +11,4 @@
 	</div>
 
 </div>
-<script src="JS/cardlist.js"></script>
+<script src="js/cardlist.js"></script>
