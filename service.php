@@ -15,7 +15,7 @@
 
 <div class="row">
 		<div class="col-lg-3 col-md-3">
-		<a href="#"><img src="img/banquet.jpg" class="card-img-top" align="left"></a>
+		<a href="#"><img src="img/banquet.jpg" class="card-img-top" style="align:left"></a>
 		</div>
 		<div class="col-lg-8 col-md-7">
 			<br>	<p class="card-text" style="font-family:sans-serif;">
@@ -42,7 +42,7 @@
 				The ambience makes it an ideal place for hosting business events that marks an impression on delegates
 			</div>
 			<div class="col-lg-3 col-md-3">
-		<a href="#"><img src="img/confrence.jpg" class="card-img-top" align="right"></a>
+		<a href="#"><img src="img/confrence.jpg" class="card-img-top" style="align:right"></a>
 		</div>
 			</div>
 </div>

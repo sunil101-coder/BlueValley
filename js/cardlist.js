@@ -1,29 +1,28 @@
-const card = [
-    {
+const card = [{
         id: 1,
         title: "Executive Room",
-        image: "http://localhost/BlueValley/img/room1.jpg",
+        image: "img/room1.jpg",
     },
     {
         id: 2,
         title: "Delux Room",
-        image: "http://localhost/BlueValley/img/room2.jpg",
+        image: "img/room2.jpg",
     },
     {
         id: 3,
         title: "Luxury Room",
-        image: "http://localhost/BlueValley/img/room3.jpg",
+        image: "img/room3.jpg",
     },
     {
         id: 4,
         title: "Suite Room",
-        image: "http://localhost/BlueValley/img/room4.jpg",
+        image: "img/room4.jpg",
     }
 ]
 
-const mycontent = document.querySelector(".mycontent")
+const mycontent = document.querySelector(".mycontent");
 
-window.addEventListener("DOMContentLoaded",function(){
+window.addEventListener("DOMContentLoaded", function() {
     const showInHtml = card.map((carditem, index) => {
         return `
             <div class="col-lg-3 col-md-3 " style="width:24%">
@@ -68,7 +67,7 @@ window.addEventListener("DOMContentLoaded",function(){
                 </div>
     
     `
-    })
-    
+    }).join('')
+
     mycontent.innerHTML = showInHtml
 })

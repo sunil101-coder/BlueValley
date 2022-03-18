@@ -4,32 +4,32 @@ const vist = [{
     },
     {
         id: 2,
-        image: "http://localhost/BlueValley/img/visit2.jpg"
+        image: "img/visit2.jpg"
     },
     {
         id: 3,
-        image: "http://localhost/BlueValley/img/visit3.jpg"
+        image: "img/visit3.jpg"
     },
     {
         id: 4,
-        image: "http://localhost/BlueValley/img/visit4.jpg"
+        image: "img/visit4.jpg"
     }
 ];
 
 const brand = [{
         id: 1,
         title: "Hotel Lotus",
-        image: "http://localhost/BlueValley/img/lotus.jpg"
+        image: "img/lotus.jpg"
     },
     {
         id: 2,
         title: "Hotel Sea",
-        image: "http://localhost/BlueValley/img/sea.jpg"
+        image: "img/sea.jpg"
     },
     {
         id: 3,
         title: "Hotel Paras",
-        image: "http://localhost/BlueValley/img/paras.jpg"
+        image: "img/paras.jpg"
     }
 ];
 
