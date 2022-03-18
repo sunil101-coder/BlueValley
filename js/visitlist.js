@@ -70,7 +70,7 @@ window.addEventListener("DOMContentLoaded", function() {
         </div>    
             
     `
-    })
+    }).join('')
 
     mybrand.innerHTML = showInHtml
 })
