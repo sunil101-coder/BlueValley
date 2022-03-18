@@ -1,18 +1,26 @@
 const gallery = [{
         id: 1,
-        image: "img/visit1.jpg"
+        image: "img/gallery1.jpg"
     },
     {
         id: 2,
-        image: "img/visit2.jpg"
+        image: "img/gallery2.jpg"
     },
     {
         id: 3,
-        image: "img/visit3.jpg"
+        image: "img/gallery3.jpg"
     },
     {
         id: 4,
-        image: "img/visit4.jpg"
+        image: "img/gallery4.jpg"
+    },
+    {
+        id: 5,
+        image: "img/gallery5.jpg"
+    },
+    {
+        id: 6,
+        image: "img/gallery6.jpg"
     }
 ];
 
@@ -26,6 +34,8 @@ window.addEventListener("DOMContentLoaded", function() {
     <img src=${galleryitem.image} alt="Avatar" class="image">
     <div class="middle">
       <div class="text">John Doe</div>
+      <h3 class="content-title">Khumbu Valley Hotel</h3>
+      <p class="content-text"><i class="fa fa-map-marker"></i> Nepal</p>
     </div>
   </div>           
 `
