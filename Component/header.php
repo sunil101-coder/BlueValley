@@ -25,9 +25,8 @@
                <ul>
                   <li><a href="aboutus.php">About Us</a></li>
                   <li><a href="service.php" onclick="changePageTitle()">services</a></li>
-                  <li><a href="gallery.php">Gallery</a></li>
                   <li><a href="contact.php">Contact</a></li>
-                  <li><a href="#">Book Now</a></li>
+                  <li><a href="#">Sign up</a></li>
                </ul>
             </nav>
         </div>

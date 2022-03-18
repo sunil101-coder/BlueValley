@@ -193,7 +193,6 @@ section {
 /*-------aboutuspage----*/
 
 .jumbotron {
-    margin: 1rem;
     padding: 1rem;
     background-image: url("../img/aboutus-jombotron.jpg");
     background-size: cover;
@@ -204,13 +203,16 @@ section {
 }
 
 .jumbotron .display-4 {
+    margin: 2rem 0 0 0;
+    color: aliceblue;
     text-align: center;
 }
 
-.jumbotron .lead>.a {
+.jumbotron .lead {
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: aliceblue;
+    margin: 2rem 0 0 -5px;
 }
 
 
@@ -256,6 +258,31 @@ section {
     .jumbotron {
         width: 100%;
         height: 10rem;
+    }
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: relative;
+        transform: translate(0rem, -7rem);
+        -ms-transform: translate(8rem, -9rem);
+        text-align: center;
+    }
+    .image:hover+.middle {
+        opacity: 0.8;
+    }
+    .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
     }
     /*----aboutusjumbotron----*/
 }
@@ -343,6 +370,17 @@ section {
     .jumbotron {
         width: 100%;
         height: 20rem;
+    }
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        transform: translate(3rem, -6rem);
+        -ms-transform: translate(8rem, -9rem);
+        text-align: center;
+    }
+    .image:hover+.middle {
+        opacity: 0.8;
     }
     /*----aboutusjumbotron----*/
 }

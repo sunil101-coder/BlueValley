@@ -1,10 +1,12 @@
 <?php require('Component/header.php'); ch_title("Service");?>
 	<br>
-	<div class="container" style="position:relative;font-family:arial;">
-		<div class="jumbotron" style="background-image:url('img/1.jpg');">
-		<div class="text-block" style="position:absolute;bottom:20px;color:white;top:40%;left:35%;padding-right:20px;">
-			<h4><a class="btn	btn-primary	btn-lg"	href="#"	role="button">How I Can Help You !</a></h4>
-		</div>
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Services</h1>
+    <p class="lead"><a href="index.php">Home</a>-->Services</p>
+  </div>
+</div>
+
 	</div>
   </div>
 	<br>
@@ -48,7 +50,7 @@
 </div>
 </section>
 <section>
-    <?php include('roomdetail.php');?>
+    <?php require('roomdetail.php');?>
 	</section>
 
 	<section id="row2">
