@@ -38,7 +38,7 @@ const myvisit = document.querySelector(".myvisit");
 window.addEventListener("DOMContentLoaded", function() {
     const showInHtml = vist.map((visititem, index) => {
         return `
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3">
     
             <div class="card" style="box-shadow:10px 10px 5px #aaaaaa;">
     
