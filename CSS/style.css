@@ -362,13 +362,8 @@ section {
     .myvisit {
         padding: 1rem;
     }
-    .myvisit .col-sm-6 {
-        padding: 1rem;
-        width: 24%;
-    }
     .myvisit .card-img,
     .card-img-top {
-        width: 100%;
         height: 10rem;
     }
     .mybrand .brandtitle {
